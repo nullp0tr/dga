@@ -4,6 +4,9 @@ OFLAG = -O2
 DBFLAGS = -fsanitize=address,undefined
 
 main:
+	$(CC) -c dga.c
+
+example:
 	$(CC) example.c -o $(NAME) $(CFLAGS) $(OFLAG)
 
 
